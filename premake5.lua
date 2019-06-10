@@ -27,6 +27,10 @@ project "ImGui"
 		"include"
 	}
 
+    defines {
+        "IMGUI_API=__declspec( dllexport )"
+    }
+
 	filter "system:windows"
 	systemversion "latest"
 	staticruntime "On"
